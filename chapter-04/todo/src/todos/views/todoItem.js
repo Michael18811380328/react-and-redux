@@ -15,7 +15,7 @@ const TodoItem = ({onToggle, onRemove, completed, text}) => {
     </li>
   )
 }
-
+// 无状态叶子组件
 
 TodoItem.propTypes = {
   onToggle: PropTypes.func.isRequired,

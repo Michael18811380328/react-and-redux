@@ -46,7 +46,7 @@ AddTodo.propTypes = {
   onAdd: PropTypes.func.isRequired
 };
 
-
+// 把内部的函数，onAdd 转发 addTodo action 到外部，dispatch出去
 const mapDispatchToProps = (dispatch) => {
   return {
     onAdd: (text) => {
