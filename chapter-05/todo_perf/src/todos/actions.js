@@ -2,10 +2,11 @@ import {ADD_TODO, TOGGLE_TODO, REMOVE_TODO} from './actionTypes.js';
 
 let nextTodoId = 10;
 
+// 增加删除更新
 export const addTodo = (text) => ({
   type: ADD_TODO,
   completed: false,
-  id: nextTodoId ++,
+  id: nextTodoId++,
   text: text
 });
 
